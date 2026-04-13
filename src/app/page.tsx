@@ -195,69 +195,69 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {/* Salesforce */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/salesforce" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/Salesforce_logo.png" alt="Salesforce" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>Salesforce</h3>
               <p className="text-xs text-gray-400">CRM DirectConnect</p>
-            </div>
+            </Link>
             {/* Amazon */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-1" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/amazon-seller-central" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-1" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/Amazon_logo.png" alt="Amazon" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>Amazon</h3>
               <p className="text-xs text-gray-400">Seller & Vendor Central</p>
-            </div>
+            </Link>
             {/* Shopify */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-2" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/shopify" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-2" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/shopify_logo.png" alt="Shopify" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>Shopify</h3>
               <p className="text-xs text-gray-400">eCommerce DirectConnect</p>
-            </div>
+            </Link>
             {/* WooCommerce */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-3" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/woocommerce" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-3" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/woocommerce_logo.svg" alt="WooCommerce" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>WooCommerce</h3>
               <p className="text-xs text-gray-400">WordPress DirectConnect</p>
-            </div>
+            </Link>
             {/* Zapier */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/zapier" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/zapier_logo.svg" alt="Zapier" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>Zapier</h3>
               <p className="text-xs text-gray-400">Workflow Automation</p>
-            </div>
+            </Link>
             {/* eBay */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-1" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/ebay" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-1" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/eBay_logo.png" alt="eBay" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>eBay</h3>
               <p className="text-xs text-gray-400">Marketplace Connect</p>
-            </div>
+            </Link>
             {/* 3PL */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-2" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/extensiv" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-2" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/3pl_logo.png" alt="3PL" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>3PL Connect</h3>
               <p className="text-xs text-gray-400">Extensiv · ShipStation · Radial</p>
-            </div>
+            </Link>
             {/* Zendesk */}
-            <div className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-3" onClick={() => window.location.href='/zendesk'} style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
+            <Link href="/zendesk" className="integration-card bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer reveal reveal-delay-3" style={{boxShadow:'0 2px 12px rgba(11,37,84,.06)'}}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white border border-gray-100 p-1">
                 <img src="/logos/zendesk_logo.svg" alt="Zendesk" className="w-full h-full object-contain" />
               </div>
               <h3 className="font-semibold text-sm mb-1" style={{color:'#0B2554'}}>Zendesk</h3>
               <p className="text-xs text-gray-400">CRM Support DirectConnect</p>
-            </div>
+            </Link>
           </div>
 
           <div className="mt-10 reveal text-center">
