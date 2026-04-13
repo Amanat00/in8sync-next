@@ -42,7 +42,7 @@ export default function About() {
                 <div className="absolute inset-0 rounded-3xl blur-3xl" style={{background:'linear-gradient(135deg,rgba(27,111,208,.3),rgba(91,184,212,.2))'}}></div>
                 <div className="relative rounded-3xl overflow-hidden border p-3" style={{background:'rgba(255,255,255,.04)',borderColor:'rgba(91,184,212,.2)',backdropFilter:'blur(10px)',boxShadow:'0 32px 80px rgba(11,37,84,.5)'}}>
                   <img
-                    src="/brand_assests/ChatGPT Image Mar 6, 2026, 12_57_43 PM 1.svg"
+                    src="/brand_assests/Our Team.jpg"
                     alt="In8Sync Team"
                     className="w-full h-auto rounded-2xl"
                     style={{maxHeight:'420px',objectFit:'contain'}}
