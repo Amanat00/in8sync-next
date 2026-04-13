@@ -35,8 +35,7 @@ export default function Footer() {
             <h4 className="text-white text-sm font-semibold mb-5">Company</h4>
             <ul className="space-y-3">
               <li><Link href="/about" className="text-sm transition-colors duration-200 hover:text-white" style={{color:'rgba(255,255,255,.4)'}}>About Us</Link></li>
-              <li><a href="#" className="text-sm transition-colors duration-200 hover:text-white" style={{color:'rgba(255,255,255,.4)'}}>Blog</a></li>
-              <li><a href="#" className="text-sm transition-colors duration-200 hover:text-white" style={{color:'rgba(255,255,255,.4)'}}>Support</a></li>
+              <li><Link href="/contact" className="text-sm transition-colors duration-200 hover:text-white" style={{color:'rgba(255,255,255,.4)'}}>Support</Link></li>
               <li><Link href="/contact" className="text-sm transition-colors duration-200 hover:text-white" style={{color:'rgba(255,255,255,.4)'}}>Contact</Link></li>
             </ul>
           </div>

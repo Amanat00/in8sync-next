@@ -193,17 +193,17 @@ export default function NetSuiteIntegrationsPage() {
         </div>
         <div className="space-y-2 mb-5">
           <a href="/shopify" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F0F9FF'}}>🛍️</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F0F9FF'}}><img src="/logos/shopify_logo.png" alt="Shopify" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Shopify DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/woocommerce" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F5F0FF'}}>🛒</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F5F0FF'}}><img src="/logos/woocommerce_logo.svg" alt="WooCommerce" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>WooCommerce DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/squarespace" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F0FFF4'}}>◻️</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F0FFF4'}}><img src="/logos/squarespace_logo.png" alt="Squarespace" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Squarespace DirectConnect</span>
             <span className="ml-auto text-[10px] font-bold px-2 py-0.5 rounded-full" style={{background:'rgba(245,175,2,.15)',color:'#D97706'}}>Coming Soon</span>
           </a>
@@ -222,17 +222,17 @@ export default function NetSuiteIntegrationsPage() {
         </div>
         <div className="space-y-2 mb-5">
           <a href="/amazon-seller-central" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFFBEB'}}>📦</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFFBEB'}}><img src="/logos/Amazon-Seller-Central_logo.png" alt="Amazon Seller Central" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Amazon Seller Central</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/amazon-vendor-central" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFF7ED'}}>🏭</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFF7ED'}}><img src="/logos/Amazon-Vendor-Central_logo.png" alt="Amazon Vendor Central" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Amazon Vendor Central</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/ebay" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#EFF6FF'}}>🏷️</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#EFF6FF'}}><img src="/logos/eBay_logo.png" alt="eBay" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>eBay DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
@@ -251,17 +251,17 @@ export default function NetSuiteIntegrationsPage() {
         </div>
         <div className="space-y-2 mb-5">
           <a href="/salesforce" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#EFF6FF'}}>☁️</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#EFF6FF'}}><img src="/logos/Salesforce_logo.png" alt="Salesforce" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Salesforce DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/zapier" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFF5F5'}}>⚡</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFF5F5'}}><img src="/logos/zapier_logo.svg" alt="Zapier" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Zapier DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/zendesk" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F0FDF4'}}>🎧</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F0FDF4'}}><img src="/logos/zendesk_logo.svg" alt="Zendesk" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Zendesk DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
@@ -280,37 +280,37 @@ export default function NetSuiteIntegrationsPage() {
         </div>
         <div className="space-y-2 mb-5">
           <a href="/extensiv" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F5F3FF'}}>📬</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F5F3FF'}}><img src="/logos/Extensiv_logo.png" alt="Extensiv" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Extensiv DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/capacity-3pl" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#F0FFF4'}}>🏗️</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#F0FFF4'}}><img src="/logos/Capacity-3PL_logo.png" alt="Capacity 3PL" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Capacity 3PL DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/shipstation" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFFBEB'}}>🚢</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFFBEB'}}><img src="/logos/shipstation_logo.png" alt="ShipStation" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>ShipStation DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/radial" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFF5F5'}}>🔴</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFF5F5'}}><img src="/logos/Radial_logo.png" alt="Radial" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Radial DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/idrive-fulfillment" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#EFF6FF'}}>📤</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#EFF6FF'}}><img src="/logos/idrive_logo.png" alt="iDrive" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>iDrive Fulfillment DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/ceva-logistics" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#FFF5F5'}}>🚛</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#FFF5F5'}}><img src="/logos/ceva_logo.png" alt="CEVA Logistics" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>CEVA Logistics DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
           <a href="/veracore" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-white/70 hover:bg-white transition-colors group">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{background:'#EFF6FF'}}>🔷</div>
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center p-1" style={{background:'#EFF6FF'}}><img src="/logos/veracore_logo.png" alt="Veracore" className="w-full h-full object-contain"/></div>
             <span className="text-sm font-medium" style={{color:'#0B2554'}}>Veracore DirectConnect</span>
             <svg className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{color:'#1B6FD0'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
           </a>
