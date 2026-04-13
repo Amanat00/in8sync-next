@@ -15,8 +15,15 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
 @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
 @keyframes pulse-ring { 0%{transform:scale(.8);opacity:.8} 100%{transform:scale(1.8);opacity:0} }
+@keyframes dash-move { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-120} }
+@keyframes dash-down { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:120} }
+@keyframes node-pulse { 0%,100%{opacity:1;r:2.5} 50%{opacity:.4;r:4} }
+@keyframes wave-scroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes wave-scroll-rev { 0%{transform:translateX(-50%)} 100%{transform:translateX(0)} }
 @keyframes slide-up { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
 @keyframes fade-in { from{opacity:0} to{opacity:1} }
+@keyframes spin-cw  { from{transform:rotate(0deg)}    to{transform:rotate(360deg)}  }
+@keyframes spin-ccw { from{transform:rotate(0deg)}    to{transform:rotate(-360deg)} }
 @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes count-up { from{opacity:0;transform:translateY(15px)} to{opacity:1;transform:translateY(0)} }
 @keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
@@ -74,10 +81,10 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
   background:
     radial-gradient(ellipse 65% 80% at 75% 40%, rgba(27,111,208,.52) 0%, transparent 60%),
     radial-gradient(ellipse 40% 50% at 5% 90%, rgba(91,184,212,.2) 0%, transparent 55%),
-    linear-gradient(155deg, rgba(2,12,30,.97) 0%, rgba(11,37,84,.87) 40%, rgba(13,30,66,.93) 100%);
-  z-index: 0;
+    linear-gradient(155deg, rgba(2,12,30,.92) 0%, rgba(11,37,84,.8) 40%, rgba(13,30,66,.88) 100%);
+  z-index: 1;
 }
-.hero-contact > * { position: relative; z-index: 1; }
+.hero-contact > * { position: relative; z-index: 3; }
 
 .hero-about {
   position: relative;

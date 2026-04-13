@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 pb-12 border-b" style={{borderColor:'rgba(255,255,255,.08)'}}>
           <div className="col-span-2 md:col-span-1">
-            <img src="/brand_assests/image (6).png" alt="In8Sync" className="h-[56px] mb-5" />
+            <img src="/brand_assests/site_logo.png" alt="In8Sync" className="h-[72px] mb-5" />
             <p className="text-sm leading-relaxed mb-6" style={{color:'rgba(255,255,255,.4)'}}>Advanced NetSuite Integration and Automation Partner.</p>
             <div className="flex gap-3 mb-5">
               <a href="https://www.linkedin.com/company/in8sync/" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors duration-200" style={{background:'rgba(255,255,255,.07)',color:'rgba(255,255,255,.5)'}}

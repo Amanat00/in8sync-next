@@ -48,7 +48,7 @@ export default function WooCommerce() {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero-woo min-h-screen flex items-center pt-20 relative overflow-hidden" style={{isolation:'isolate'}}>
+      <section className="hero-woo min-h-[calc(100vh-30px)] flex items-center pt-[65px] pb-4 relative overflow-hidden" style={{isolation:'isolate'}}>
         <div className="absolute inset-0 grid-lines opacity-60 z-10 pointer-events-none"></div>
         <div className="absolute inset-0 pointer-events-none z-10">
           <div className="absolute top-16 right-8 w-96 h-96 rounded-full animate-float" style={{background:'radial-gradient(circle,rgba(127,84,179,.18) 0%,transparent 70%)'}}></div>

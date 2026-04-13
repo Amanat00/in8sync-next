@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden" style={{isolation:'isolate'}}>
+      <section className="hero-bg flex items-center pt-[130px] pb-[60px] relative overflow-hidden" style={{isolation:'isolate'}}>
         {/* Decorative orbs */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-16 right-0 w-[600px] h-[600px] rounded-full animate-float" style={{background:'radial-gradient(circle,rgba(27,111,208,.2) 0%,transparent 70%)'}}></div>
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-24 w-full relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: text */}
             <div style={{animation:'slide-up .9s cubic-bezier(.23,1,.32,1) both'}}>

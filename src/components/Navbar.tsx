@@ -18,11 +18,13 @@ export default function Navbar() {
     const handleScroll = () => {
       if (!navRef.current) return
       if (window.scrollY > 60) {
-        navRef.current.style.background = 'rgba(7,18,32,0.98)'
-        navRef.current.style.borderBottomColor = 'rgba(91,184,212,.18)'
+        navRef.current.style.background = 'rgba(7,18,32,1)'
+        navRef.current.style.borderBottomColor = 'rgba(91,184,212,.15)'
+        navRef.current.style.boxShadow = '0 2px 20px rgba(0,0,0,.3)'
       } else {
-        navRef.current.style.background = 'rgba(7,18,32,0.92)'
-        navRef.current.style.borderBottomColor = 'rgba(91,184,212,.12)'
+        navRef.current.style.background = 'rgba(7,18,32,0.97)'
+        navRef.current.style.borderBottomColor = 'rgba(255,255,255,.06)'
+        navRef.current.style.boxShadow = 'none'
       }
     }
     window.addEventListener('scroll', handleScroll)
@@ -33,17 +35,17 @@ export default function Navbar() {
     <>
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50">
-        <nav ref={navRef} className="px-6 md:px-12 py-4 transition-all duration-300" style={{background:'rgba(7,18,32,0.92)',backdropFilter:'blur(20px)',borderBottom:'1px solid rgba(91,184,212,.12)'}}>
+        <nav ref={navRef} className="px-6 md:px-12 py-2.5 transition-all duration-300" style={{background:'rgba(7,18,32,0.97)',backdropFilter:'blur(20px)',borderBottom:'1px solid rgba(255,255,255,.06)'}}>
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <img src="/brand_assests/image (6).png" alt="In8Sync" className="h-[56px] w-auto transition-transform duration-300 group-hover:scale-105" />
+              <img src="/brand_assests/site_logo.png" alt="In8Sync" className="h-[60px] w-auto transition-transform duration-300 group-hover:scale-105" />
             </Link>
             <div className="hidden md:flex items-center gap-6">
-              <Link href="/" className={`text-sm font-semibold transition-colors duration-200${isHome ? '' : ' text-white/80 hover:text-white'}`} style={isHome ? {color:'#5BB8D4'} : undefined}>Home</Link>
+              <Link href="/" className={`text-sm font-semibold transition-colors duration-200${isHome ? '' : ' hover:text-[#5BB8D4]'}`} style={isHome ? {color:'#5BB8D4'} : {color:'rgba(255,255,255,.85)'}}>Home</Link>
 
               {/* MEGA MENU */}
               <div className="mega-group">
-                <button className={`text-sm font-medium flex items-center gap-1.5 transition-colors duration-200 py-2${isIntegration ? '' : ' text-white/80 hover:text-white'}`} style={isIntegration ? {color:'#5BB8D4'} : undefined}>
+                <button className={`text-sm font-medium flex items-center gap-1.5 transition-colors duration-200 py-2 hover:text-[#5BB8D4]`} style={isIntegration ? {color:'#5BB8D4'} : {color:'rgba(255,255,255,.85)'}}>
                   NetSuite Integrations
                   <svg className="mega-arrow w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7"/></svg>
                 </button>
@@ -125,13 +127,13 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <Link href="/about" className={`text-sm font-medium transition-colors duration-200${isAbout ? '' : ' text-white/80 hover:text-white'}`} style={isAbout ? {color:'#5BB8D4'} : undefined}>About</Link>
-              <Link href="/contact" className={`text-sm font-medium transition-colors duration-200${isContact ? '' : ' text-white/80 hover:text-white'}`} style={isContact ? {color:'#5BB8D4'} : undefined}>Contact</Link>
+              <Link href="/about" className={`text-sm font-medium transition-colors duration-200 hover:text-[#5BB8D4]`} style={isAbout ? {color:'#5BB8D4'} : {color:'rgba(255,255,255,.85)'}}>About</Link>
+              <Link href="/contact" className={`text-sm font-medium transition-colors duration-200 hover:text-[#5BB8D4]`} style={isContact ? {color:'#5BB8D4'} : {color:'rgba(255,255,255,.85)'}}>Contact</Link>
             </div>
             <div className="hidden md:flex items-center gap-3">
               <a href="https://account.in8sync.com/" className="btn-outline text-white text-sm font-semibold px-7 py-3.5 rounded-xl">Sign In</a>
             </div>
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white p-2">
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 text-white">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
           </div>
@@ -143,7 +145,7 @@ export default function Navbar() {
         <button onClick={() => setMobileOpen(false)} className="absolute top-6 right-6 text-white p-2">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
-        <img src="/brand_assests/image (6).png" alt="In8Sync" className="h-[56px] mb-6" />
+        <img src="/brand_assests/site_logo.png" alt="In8Sync" className="h-[72px] mb-6" />
 
         <Link href="/" onClick={() => setMobileOpen(false)} className="text-white text-xl font-medium">Home</Link>
 

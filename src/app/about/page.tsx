@@ -10,25 +10,70 @@ export default function About() {
       <Navbar />
 
       {/* ABOUT HERO */}
-      <section className="hero-about min-h-[70vh] flex items-end pt-24 pb-20 relative overflow-hidden" style={{isolation:'isolate'}}>
+      <section className="hero-about min-h-screen flex items-center pt-32 pb-16 relative overflow-hidden" style={{isolation:'isolate'}}>
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-16 right-10 w-[500px] h-[500px] rounded-full animate-float" style={{background:'radial-gradient(circle,rgba(27,111,208,.2) 0%,transparent 70%)'}}></div>
           <div className="absolute -bottom-10 -left-10 w-[300px] h-[300px] rounded-full animate-float2" style={{background:'radial-gradient(circle,rgba(91,184,212,.1) 0%,transparent 70%)'}}></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
-          <div className="max-w-3xl" style={{animation:'slide-up .9s cubic-bezier(.23,1,.32,1) both'}}>
-            <div className="flex items-center gap-2 mb-6">
-              <Link href="/" className="text-xs font-medium transition-colors" style={{color:'rgba(255,255,255,.4)'}}>Home</Link>
-              <svg className="w-3 h-3" style={{color:'rgba(255,255,255,.25)'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-              <span className="text-xs font-medium" style={{color:'#5BB8D4'}}>About</span>
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* LEFT */}
+            <div style={{animation:'slide-up .9s cubic-bezier(.23,1,.32,1) both'}}>
+              <div className="flex items-center gap-2 mb-6">
+                <Link href="/" className="text-xs font-medium transition-colors" style={{color:'rgba(255,255,255,.4)'}}>Home</Link>
+                <svg className="w-3 h-3" style={{color:'rgba(255,255,255,.25)'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                <span className="text-xs font-medium" style={{color:'#5BB8D4'}}>About</span>
+              </div>
+              <p className="text-[11px] font-semibold tracking-widest uppercase mb-5" style={{color:'#5BB8D4'}}>Our Story</p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6" style={{letterSpacing:'-0.03em',lineHeight:1.05}}>
+                We Make NetSuite<br />
+                <span className="font-bold gradient-text">Work The Way</span><br />
+                <span className="font-semibold text-white">You Want It To</span>
+              </h1>
+              <p className="text-lg max-w-2xl" style={{color:'rgba(255,255,255,.8)',lineHeight:1.75}}>Headquartered in Grand Junction, Colorado, In8Sync has been providing advanced NetSuite solutions for over a decade with a passionate global team of experts.</p>
+              <div className="flex flex-wrap gap-3 mt-8">
+                <Link href="/contact" className="btn-primary text-white font-bold px-7 py-3.5 rounded-xl text-sm">Get In Touch</Link>
+                <Link href="/about#story" className="btn-outline text-white font-semibold px-6 py-3.5 rounded-xl text-sm">Our Story</Link>
+              </div>
             </div>
-            <p className="text-[11px] font-semibold tracking-widest uppercase mb-5" style={{color:'#5BB8D4'}}>Our Story</p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6" style={{letterSpacing:'-0.03em',lineHeight:1.05}}>
-              We Make NetSuite<br />
-              <span className="font-bold gradient-text">Work The Way</span><br />
-              <span className="font-semibold text-white">You Want It To</span>
-            </h1>
-            <p className="text-lg max-w-2xl" style={{color:'rgba(255,255,255,.8)',lineHeight:1.75}}>Headquartered in Grand Junction, Colorado, In8Sync has been providing advanced NetSuite solutions for over a decade with a passionate global team of experts.</p>
+            {/* RIGHT — Image */}
+            <div className="relative flex justify-center" style={{animation:'fade-in 1.2s ease both .5s',opacity:0}}>
+              <div className="relative w-full max-w-lg">
+                <div className="absolute inset-0 rounded-3xl blur-3xl" style={{background:'linear-gradient(135deg,rgba(27,111,208,.3),rgba(91,184,212,.2))'}}></div>
+                <div className="relative rounded-3xl overflow-hidden border p-3" style={{background:'rgba(255,255,255,.04)',borderColor:'rgba(91,184,212,.2)',backdropFilter:'blur(10px)',boxShadow:'0 32px 80px rgba(11,37,84,.5)'}}>
+                  <img
+                    src="/brand_assests/ChatGPT Image Mar 6, 2026, 12_57_43 PM 1.svg"
+                    alt="In8Sync Team"
+                    className="w-full h-auto rounded-2xl"
+                    style={{maxHeight:'420px',objectFit:'contain'}}
+                  />
+                </div>
+                {/* Floating badge top */}
+                <div className="absolute -top-5 -right-5 bg-white rounded-2xl px-4 py-3 shadow-2xl card-lift">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={{background:'linear-gradient(135deg,#0B2554,#1B6FD0)'}}>
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold" style={{color:'#0B2554'}}>NetSuite Partner</div>
+                      <div className="text-[10px] text-gray-400">Advanced Certified</div>
+                    </div>
+                  </div>
+                </div>
+                {/* Floating badge bottom */}
+                <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-4 py-3 shadow-2xl card-lift">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={{background:'linear-gradient(135deg,#059669,#10B981)'}}>
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold" style={{color:'#0B2554'}}>10+ Years</div>
+                      <div className="text-[10px] text-gray-400">NetSuite Expertise</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

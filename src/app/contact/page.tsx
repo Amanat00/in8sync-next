@@ -25,14 +25,38 @@ export default function Contact() {
       <Navbar />
 
       {/* CONTACT HERO */}
-      <section className="hero-contact min-h-[65vh] flex items-end pt-24 pb-20 relative overflow-hidden" style={{isolation:'isolate'}}>
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-16 right-0 w-[500px] h-[500px] rounded-full animate-float" style={{background:'radial-gradient(circle,rgba(27,111,208,.2) 0%,transparent 70%)'}}></div>
-          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full animate-float2" style={{background:'radial-gradient(circle,rgba(91,184,212,.1) 0%,transparent 70%)'}}></div>
+      <section className="hero-contact min-h-screen flex items-center pt-32 pb-16 relative overflow-hidden" style={{isolation:'isolate'}}>
+        {/* WAVE BACKGROUND — inline position to bypass hero-contact > * CSS rule */}
+        <div style={{position:'absolute',inset:0,zIndex:2,pointerEvents:'none',overflow:'hidden'}}>
+
+          {/* glow orbs */}
+          <div style={{position:'absolute',top:0,right:0,width:'500px',height:'500px',borderRadius:'50%',background:'radial-gradient(circle,rgba(27,111,208,.2) 0%,transparent 65%)',transform:'translate(15%,-15%)'}}></div>
+          <div style={{position:'absolute',bottom:0,left:0,width:'400px',height:'400px',borderRadius:'50%',background:'radial-gradient(circle,rgba(91,184,212,.13) 0%,transparent 65%)',transform:'translate(-15%,15%)'}}></div>
+
+          {/* Wave 1 — scrolling filled wave at bottom */}
+          <div style={{position:'absolute',bottom:0,left:0,width:'100%',height:'260px',overflow:'hidden'}}>
+            <svg style={{position:'absolute',bottom:0,left:0,width:'200%',height:'100%',animation:'wave-scroll 8s linear infinite'}} viewBox="0 0 2880 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="wg1" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#1B6FD0" stopOpacity="0.2"/>
+                  <stop offset="100%" stopColor="#0B2554" stopOpacity="0.05"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,130 C240,50 480,210 720,130 C960,50 1200,210 1440,130 C1680,50 1920,210 2160,130 C2400,50 2640,210 2880,130 L2880,260 L0,260 Z" fill="url(#wg1)"/>
+            </svg>
+          </div>
+
+          {/* Wave 2 — above, reverse scroll */}
+          <div style={{position:'absolute',bottom:0,left:0,width:'100%',height:'200px',overflow:'hidden'}}>
+            <svg style={{position:'absolute',bottom:0,left:0,width:'200%',height:'100%',animation:'wave-scroll-rev 11s linear infinite'}} viewBox="0 0 2880 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,100 C360,30 720,170 1080,100 C1440,30 1800,170 2160,100 C2520,30 2700,160 2880,100 L2880,200 L0,200 Z" fill="rgba(91,184,212,0.12)"/>
+            </svg>
+          </div>
+
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
-          <div className="max-w-3xl" style={{animation:'slide-up .9s cubic-bezier(.23,1,.32,1) both'}}>
-            <div className="flex items-center gap-2 mb-6">
+          <div className="text-center" style={{animation:'slide-up .9s cubic-bezier(.23,1,.32,1) both'}}>
+            <div className="flex items-center justify-center gap-2 mb-6">
               <Link href="/" className="text-xs font-medium transition-colors" style={{color:'rgba(255,255,255,.4)'}}>Home</Link>
               <svg className="w-3 h-3" style={{color:'rgba(255,255,255,.25)'}} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               <span className="text-xs font-medium" style={{color:'#5BB8D4'}}>Contact</span>
@@ -43,7 +67,7 @@ export default function Contact() {
               <span className="font-bold gradient-text">NetSuite</span><br />
               <span className="font-semibold text-white">Integration</span>
             </h1>
-            <p className="text-lg max-w-xl" style={{color:'rgba(255,255,255,.8)',lineHeight:1.75}}>Whether you need a demo, a custom solution, or just have a question, our team of NetSuite experts is ready to help.</p>
+            <p className="text-lg max-w-2xl mx-auto" style={{color:'rgba(255,255,255,.8)',lineHeight:1.75}}>Whether you need a demo, a custom solution, or just have a question, our team of NetSuite experts is ready to help.</p>
           </div>
         </div>
       </section>

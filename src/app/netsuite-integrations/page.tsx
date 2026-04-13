@@ -9,7 +9,7 @@ export default function NetSuiteIntegrationsPage() {
       <Navbar />
       
 {/* HERO */}
-<section className="hero-bg min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden" style={{isolation:'isolate'}}>
+<section className="hero-bg min-h-[calc(100vh-30px)] flex items-center pt-[65px] pb-[50px] relative overflow-hidden" style={{isolation:'isolate'}}>
   <div className="absolute inset-0 pointer-events-none">
     <div className="absolute top-20 right-0 w-[700px] h-[700px] rounded-full animate-float" style={{background:'radial-gradient(circle,rgba(27,111,208,.18) 0%,transparent 70%)'}}></div>
     <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full animate-float2" style={{background:'radial-gradient(circle,rgba(91,184,212,.1) 0%,transparent 70%)'}}></div>
